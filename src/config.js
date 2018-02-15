@@ -4,35 +4,34 @@ const config = [
     rows: 3,
     columns: 3,
     widgets: [
+      // {
+      //   extension: 'github-extension',
+      //   name: 'IssuesPie',
+      //   title: 'Hello',
+      //   x: 1,
+      //   y: 0,
+      //   rows: 1,
+      //   columns: 1,
+      //   interval: 2000
+      // },
+      // {
+      //   extension: 'github-extension',
+      //   name: 'RecentIssues',
+      //   title: 'Recent Issues',
+      //   x: 2,
+      //   y: 0,
+      //   rows: 3,
+      //   columns: 1,
+      //   interval: 5000
+      // },
       {
-        extension: 'my-extension',
-        name: 'GithubUser',
-        title: 'Hello',
+        extension: 'github-extension',
+        name: 'IssuesTimeline',
+        title: 'Issues Timeline',
         x: 0,
-        y: 0,
+        y: 2,
         rows: 1,
-        columns: 1,
-        interval: 2000
-      },
-      {
-        extension: 'github-extension',
-        name: 'IssuesPie',
-        title: 'Hello',
-        x: 1,
-        y: 0,
-        rows: 1,
-        columns: 1,
-        interval: 2000
-      },
-      {
-        extension: 'github-extension',
-        name: 'RecentIssues',
-        title: 'Recent Issues',
-        x: 2,
-        y: 0,
-        rows: 3,
-        columns: 1,
-        interval: 5000
+        columns: 2
       }
     ]
   },

@@ -1,23 +1,23 @@
 import React from 'react';
 import { render } from 'react-dom';
-import nozaik from 'nozaik';
-console.log(nozaik);
+import argus from 'argus';
+console.log(argus);
 import config from './config';
 import myextension from 'my-extension';
 import githubExtension from 'github-extension';
 
 console.log(githubExtension);
 
-const { Nozaik } = nozaik.components;
+const { Argus } = argus.components;
 
-nozaik.extensions.load([
+argus.extensions.load([
   myextension,
   githubExtension
 ]);
 
-console.log('loadedExtensions', nozaik.extensions.get());
+console.log('loadedExtensions', argus.extensions.get());
 
 render(
-  <Nozaik config={config} />,
-  document.querySelector("#nozaik")
+  <Argus config={config} />,
+  document.querySelector("#argus")
 )

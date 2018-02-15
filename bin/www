@@ -20,8 +20,8 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-var io = require('nozaik/server');
-require('../nozaik/routes');
+var io = require('argus/server');
+require('../argus/routes');
 
 io.socket.attach(server);
 
