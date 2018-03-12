@@ -1,23 +1,23 @@
 import React from 'react';
 import { render } from 'react-dom';
 import argus from 'argus';
-console.log(argus);
-import config from './config';
-import myextension from 'my-extension';
+
+// import config from './config';
+// import myextension from 'my-extension';
 import githubExtension from 'github-extension';
 
-console.log(githubExtension);
+import App from './components/App';
 
-const { Argus } = argus.components;
+// const { Argus } = argus.components;
 
 argus.extensions.load([
-  myextension,
+  // myextension,
   githubExtension
 ]);
 
-console.log('loadedExtensions', argus.extensions.get());
+// console.log('loadedExtensions', argus.extensions.get());
 
 render(
-  <Argus config={config} />,
+  <App />,
   document.querySelector("#argus")
 )

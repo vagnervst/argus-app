@@ -4,26 +4,26 @@ const config = [
     rows: 3,
     columns: 3,
     widgets: [
-      // {
-      //   extension: 'github-extension',
-      //   name: 'IssuesPie',
-      //   title: 'Hello',
-      //   x: 1,
-      //   y: 0,
-      //   rows: 1,
-      //   columns: 1,
-      //   interval: 2000
-      // },
-      // {
-      //   extension: 'github-extension',
-      //   name: 'RecentIssues',
-      //   title: 'Recent Issues',
-      //   x: 2,
-      //   y: 0,
-      //   rows: 3,
-      //   columns: 1,
-      //   interval: 5000
-      // },
+      {
+        extension: 'github-extension',
+        name: 'IssuesPie',
+        title: 'Hello',
+        x: 1,
+        y: 0,
+        rows: 1,
+        columns: 1,
+        interval: 60000
+      },
+      {
+        extension: 'github-extension',
+        name: 'RecentIssues',
+        title: 'Recent Issues',
+        x: 2,
+        y: 0,
+        rows: 3,
+        columns: 1,
+        interval: 60000
+      },
       {
         extension: 'github-extension',
         name: 'IssuesTimeline',
@@ -31,7 +31,8 @@ const config = [
         x: 0,
         y: 2,
         rows: 1,
-        columns: 2
+        columns: 2,
+        interval: 60000
       }
     ]
   },
