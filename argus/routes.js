@@ -1,4 +1,4 @@
-var aServer = require('argus/server');
+var aServer = require('argus-server');
 
 var githubExtension = require('github-extension/routes');
 
