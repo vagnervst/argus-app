@@ -1,23 +1,24 @@
 {
-  "name": "servergen",
+  "name": "pagarme-issues-dashboard",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vagnervst/pagarme-issues-dashboard"
+  },
+  "author": "Vagner S",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./index",
+    "build": "webpack"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
     "express": "~4.15.5",
     "moment-timezone": "^0.5.14",
-    "mongoose": "^5.0.7",
-    "morgan": "~1.9.0",
-    "pug": "2.0.0-beta11",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "serve-favicon": "~2.4.5",
     "socket.io": "^2.0.4"
   },
   "devDependencies": {

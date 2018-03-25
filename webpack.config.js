@@ -9,10 +9,6 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.pug$/,
-        loader: 'html-loader!pug-html-loader?pretty&exports=false'
-      },
-      {
         test: /\.js$/,
         exclude: /${node_modules}/,
         loader: 'babel-loader'
@@ -26,6 +22,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ]
 }
