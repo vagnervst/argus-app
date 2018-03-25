@@ -7,11 +7,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
-      {
-        test: /\.pug$/,
-        loader: 'html-loader!pug-html-loader?pretty&exports=false'
-      },
+    rules: [
       {
         test: /\.js$/,
         exclude: /${node_modules}/,
