@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var axios = require('axios');
 
+const apiUrl = process.env.API_URL;
+
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
@@ -9,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.post('/login', async function(req, res, next) {
   const { username, password } = req.body;
 
-  let request = await axios.post('http://localhost:8081/supporters/login', {
+  let request = await axios.post(`${apiUrl}/supporters/login`, {
     user: username,
     password: password
   }).then( res => res.data );
@@ -29,7 +31,7 @@ router.post('/issue/assign', async function(req, res, next) {
   const loggedUser = req.cookies.user || null;
 
   if( loggedUser ) {
-    let response = await axios.put(`http://localhost:8081/issues/${issueId}/assign`, {
+    let response = await axios.put(`${apiUrl}/issues/${issueId}/assign`, {
       supporter: loggedUser
     });
 

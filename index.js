@@ -1,8 +1,8 @@
 const path = require('path');
 const express = require('express');
 const argus = require('argus-server');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
 const githubExtension = require('github-extension/routes');
 const routes = require('./routes');
@@ -18,4 +18,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
 argus.routes.add('github-extension', githubExtension);
-argus.server(app, { port: 3000 });
+argus.server(app, { port: process.env.PORT || 3000 });
