@@ -13,6 +13,9 @@
     "build": "webpack"
   },
   "dependencies": {
+    "@argus-dashboard/components": "0.0.0-rc1",
+    "@argus-dashboard/github-extension": "^1.0.0-rc2",
+    "@argus-dashboard/server": "0.0.0",
     "axios": "^0.18.0",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
@@ -20,7 +23,8 @@
     "moment-timezone": "^0.5.14",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "socket.io": "^2.0.4"
+    "socket.io": "^2.0.4",
+    "webpack-cli": "^2.0.13"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import argus from 'argus';
+import argus from '@argus-dashboard/components';
 
-import githubExtension from 'github-extension';
+import githubExtension from '@argus-dashboard/github-extension';
 
 import App from './components/App';
 

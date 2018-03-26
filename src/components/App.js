@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './style.scss';
 
-import argus from 'argus';
+import argus from '@argus-dashboard/components';
 const { Argus } = argus.components;
 import config from '../config';
 

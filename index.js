@@ -1,10 +1,10 @@
 const path = require('path');
 const express = require('express');
-const argus = require('argus-server');
+const argus = require('@argus-dashboard/server');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
-const githubExtension = require('github-extension/routes');
+const githubExtension = require('@argus-dashboard/github-extension/routes');
 const routes = require('./routes');
 
 let app = express();
