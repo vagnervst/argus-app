@@ -12,7 +12,15 @@ const config = [
         y: 0,
         rows: 1,
         columns: 1,
-        interval: 60000
+        interval: 60000,
+        config: {
+          owner: 'pagarme',
+          repositories: [
+            'pagarme-js', 'pagarme-php', 'pagarme-net', 'pagarme-java',
+            'pagarme-magento', 'pagarme-prestashop', 'pagarme-opencart'
+          ],
+          issuesCount: 20
+        }
       },
       {
         extension: 'github-extension',
@@ -22,7 +30,15 @@ const config = [
         y: 0,
         rows: 3,
         columns: 1,
-        interval: 60000
+        interval: 60000,
+        config: {
+          owner: 'pagarme',
+          repositories: [
+            'pagarme-js', 'pagarme-php', 'pagarme-net', 'pagarme-java',
+            'pagarme-magento', 'pagarme-prestashop', 'pagarme-opencart'
+          ],
+          issuesCount: 20
+        }
       },
       {
         extension: 'github-extension',
@@ -32,7 +48,16 @@ const config = [
         y: 2,
         rows: 1,
         columns: 2,
-        interval: 60000
+        interval: 60000,
+        config: {
+          owner: 'pagarme',
+          repositories: [
+            'pagarme-js', 'pagarme-php', 'pagarme-net', 'pagarme-java',
+            'pagarme-magento', 'pagarme-prestashop', 'pagarme-opencart'
+          ],
+          limit: 20,
+          daysAgo: 7
+        }
       }
     ]
   },
