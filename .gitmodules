@@ -1,0 +1,15 @@
+[submodule "argus-skin"]
+	path = argus-skin
+	url = git@github.com:vagnervst/argus-skin.git
+[submodule "argus"]
+	path = argus
+	url = git@github.com:vagnervst/argus.git
+[submodule "argus-github-extension"]
+	path = argus-github-extension
+	url = git@github.com:vagnervst/argus-github-extension.git
+[submodule "argus-server"]
+	path = argus-server
+	url = git@github.com:vagnervst/argus-server.git
+[submodule "pagarme-issues-dashboard"]
+	path = pagarme-issues-dashboard
+	url = git@github.com:vagnervst/pagarme-issues-dashboard.git
