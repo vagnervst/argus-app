@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 
 import config from '../../config'
-import argus from '@argus-dashboard/components'
+import argus, { Argus, ToggleButton, Label } from '@argus-dashboard/components'
 import axios from 'axios'
 
 import CookieWrapper from '../CookieWrapper'
-
-const { Argus, ToggleButton, Label } = argus.components
 
 class Dashboard extends Component {
 
