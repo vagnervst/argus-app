@@ -1,0 +1,27 @@
+version: '3'
+services:
+  database:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=pagarmesupport
+  api:
+    build: ./argus-github-api
+    ports:
+      - "8070:8070"
+    links:
+      - database
+    environment:
+      - PORT=8070
+      - DB_URL=mongodb://database/pagarmesupport
+  dashboard:
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - api
+    env_file:
+      - .env
+    environment:
+      - API_URL=http://api:8070

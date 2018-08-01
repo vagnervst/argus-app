@@ -13,3 +13,6 @@
 [submodule "pagarme-issues-dashboard"]
 	path = pagarme-issues-dashboard
 	url = git@github.com:vagnervst/pagarme-issues-dashboard.git
+[submodule "argus-github-api"]
+	path = argus-github-api
+	url = git@github.com:vagnervst/argus-github-api.git
