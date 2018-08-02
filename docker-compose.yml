@@ -25,3 +25,8 @@ services:
       - .env
     environment:
       - API_URL=http://api:8070
+    volumes:
+      - ./argus:/home/app/pagarme-issues-dashboard/node_modules/@argus-dashboard/components
+      - ./argus-github-extension:/home/app/pagarme-issues-dashboard/node_modules/@argus-dashboard/github-extension
+      - ./argus-server:/home/app/pagarme-issues-dashboard/node_modules/@argus-dashboard/server
+      - ./argus-skin:/home/app/pagarme-issues-dashboard/node_modules/@argus-dashboard/skin
