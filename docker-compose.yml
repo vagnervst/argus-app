@@ -14,7 +14,9 @@ services:
       - database
     environment:
       - PORT=8070
-      - DB_URL=mongodb://database/pagarmesupport
+      - DB_URL=mongodb://database:27017/pagarmesupport
+    volumes:
+      - ./argus-github-api:/home/node/app
   dashboard:
     build: .
     ports:
@@ -30,3 +32,4 @@ services:
       - ./argus-github-extension:/home/app/pagarme-issues-dashboard/node_modules/@argus-dashboard/github-extension
       - ./argus-server:/home/app/pagarme-issues-dashboard/node_modules/@argus-dashboard/server
       - ./argus-skin:/home/app/pagarme-issues-dashboard/node_modules/@argus-dashboard/skin
+      - ./pagarme-issues-dashboard:/home/app/pagarme-issues-dashboard
