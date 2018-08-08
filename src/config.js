@@ -12,7 +12,7 @@ const config = [
         y: 1,
         rows: 1,
         columns: 1,
-        interval: 60000,
+        interval: 120000,
         config: {
           owner: 'pagarme',
           repositories: [
@@ -30,7 +30,7 @@ const config = [
         y: 1,
         rows: 3,
         columns: 1,
-        interval: 60000,
+        interval: 120000,
         config: {
           owner: 'pagarme',
           repositories: [
@@ -48,7 +48,7 @@ const config = [
         y: 3,
         rows: 1,
         columns: 2,
-        interval: 60000,
+        interval: 120000,
         config: {
           owner: 'pagarme',
           repositories: [
