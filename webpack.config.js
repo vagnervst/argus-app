@@ -1,16 +1,13 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: __dirname + '/src/index.js',
+  entry: [
+    __dirname + '/src/index.js',
+    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=2000'
+  ],
   output: {
-    path: __dirname + '/public/javascripts',
+    path: __dirname + '/public/js',
     filename: 'bundle.js'
-  },
-  devServer: {
-    contentBase: __dirname + '/public',
-    port: 3000,
-    inline: true,
-    hot: true
   },
   mode: 'development',
   module: {
